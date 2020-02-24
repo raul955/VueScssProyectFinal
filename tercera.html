@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Transferencias</title>
+    <link rel="stylesheet" type="text/css" href="scss/css.css">
+    <link href="custom.css" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+
+        <a href="pagina.html"><img src="images/pngocean.com.png" class="pollos2" /></a>
+        <a href="pagina.html">Home</a>
+        <a href="primera.html">Jugadores</a>
+        <a href="segunda.html">Equipos</a>
+        <a href="tercera.html" class="active">Transferencias</a>
+        <a href="contacto.html">contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1 align="center">Transferencias MLB</h1>
+    <br/>
+
+    <div class="row" id="app">
+        <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Jugador...'>
+        <br/><br/>
+        <div class="column" id="list-teams" v-if="transFilter && transFilter.length">
+            <div class="card" v-for="tran in transFilter">
+                <label><b>Jugador: </b>{{ tran.player }}</label><br/>
+                <label><b>Club Origen: </b>{{ tran.from_team }}</label><br/>
+                <label><b>Club Destino: </b>{{ tran.team }}</label><br/>
+
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <a href="#top">
+        <p align=center><strong>Ir arriba</strong></a>
+    </p>
+    <br><br><br>
+    <div align="center">
+        <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" class="pollos" /></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="pollos" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/face.png" class="pollos" /></a>
+    </div>
+
+    <br><br>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./trofeos.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

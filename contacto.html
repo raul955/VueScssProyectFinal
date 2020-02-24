@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+
+    <link href="custom.css" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="scss/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="pagina.html"><img src="images/pngocean.com.png" class="pollos2" /></a>
+        <a href="pagina.html">Home</a>
+        <a href="primera.html">Jugadores</a>
+        <a href="segunda.html">Equipos</a>
+        <a href="tercera.html">Transferencias</a>
+        <a href="contacto.html" class="active">contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <br/><br/>
+    <br/><br/>
+
+    <div class="container">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nombre: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Escribe tu nombre...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Apellidos: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Escribe tu apellido...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Email: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Escribe tu email...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Consulta: </label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" style="margin-left: 10px;" rows="4" name="subject" placeholder="Escribe algo..."></textarea>
+                </div>
+            </div>
+        </form>
+        <br/>
+        <a class="boton_personalizado" href="./contacto.html">Enviar</a>
+    </div>
+    <br><br><br><br>
+    <h1 align="center">¿Donde estamos?</h1>
+    <br><br><br><br>
+
+
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3169.411494137127!2d-6.007861108634324!3d37.403747639651066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1582569770253!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <a href="#top">
+        <p align=center><strong>Ir arriba</strong></a>
+    </p>
+    <br><br>
+
+
+    <div align="center">
+        <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" class="pollos" /></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="pollos" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/face.png" class="pollos" /></a>
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

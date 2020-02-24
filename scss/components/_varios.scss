@@ -1,0 +1,43 @@
+.google-maps {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: -300px;
+    iframe {
+        left: 10%;
+        position: absolute;
+        width: 80% !important;
+        height: 50% !important;
+    }
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &::after {
+        padding-top: 30%;
+        display: block;
+        content: '';
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 78%;
+        height: 100%;
+    }
+}
+
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background: #024959;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

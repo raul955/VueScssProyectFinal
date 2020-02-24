@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ligas</title>
+    <link rel="stylesheet" type="text/css" href="scss/css.css">
+    <link href="custom.css" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="pagina.html"><img src="images/pngocean.com.png" class="pollos2" /></a>
+        <a href="pagina.html">Home</a>
+        <a href="primera.html" class="active">Jugadores</a>
+        <a href="segunda.html">Equipos</a>
+        <a href="tercera.html">Transferencias</a>
+        <a href="contacto.html">contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <br/>
+    <h1 align="center">Jugadores MLB</h1>
+    <br/>
+
+    <div class="row" id="app">
+        <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Jugador...'>
+        <br/><br/>
+        <div class="column" id="list-players" v-if="mansFilter && mansFilter.length">
+            <div class="card" v-for="man in mansFilter">
+                <label><b>Nombre: </b>{{ man.name_display_first_last }}</label><br/>
+                <label><b>Dorsal: </b>{{ man.jersey_number }}</label><br/>
+                <label><b>Equipo: </b>{{ man.team_name }}</label><br/>
+                <label><b>Peso: </b>{{ man.weight }}</label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <a href="#top">
+        <p align=center><strong>Ir arriba</strong></a>
+    </p>
+    <br><br><br>
+    <div align="center">
+        <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" class="pollos" /></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="pollos" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/face.png" class="pollos" /></a>
+    </div>
+
+    <br><br>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./ligas.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
