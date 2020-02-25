@@ -3,11 +3,13 @@
 // Layout
 @import 'layout/slide';
 @import 'layout/navbar';
+@import 'layout/footer';
 // Components
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/varios';
 @import 'components/cards';
+@import 'components/registro';
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child),
     .dropdown .dropbtn {

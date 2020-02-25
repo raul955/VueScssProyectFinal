@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+
+    <link href="custom.css" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="scss/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="pagina.html"><img src="images/pngocean.com.png" class="pollos2" /></a>
+        <a href="pagina.html">Home</a>
+        <a href="primera.html">Jugadores</a>
+        <a href="segunda.html">Equipos</a>
+        <a href="tercera.html">Transferencias</a>
+        <a href="contacto.html">contacto</a>
+
+        <a href="registro.html" style="float: right" class="active">Registro</a>
+        <a href="login.html" style="float: right">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <br/><br/>
+
+    <form>
+
+        <h1 align="center">Registro</h1>
+        <br/>
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Introduce email" name="email" required>
+
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Introduce contraseña" name="psw" required>
+
+            <label for="psw-repeat"><b>Repite tu conraseña</b></label>
+            <input type="password" placeholder="Introduce contraseña" name="psw-repeat" required>
+            <hr>
+            <a href="pagina.html">
+                <button type="button" href="primera.html" class="registerbtn">Registrarse</button>
+            </a>
+        </div>
+    </form>
+
+
+    <footer class="footer ">
+        <div align="center">
+            <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" class="pollos" /></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="pollos" /></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/face.png" class="pollos" /></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
